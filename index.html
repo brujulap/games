@@ -1,0 +1,18 @@
+<!doctype html><html lang="es"><head><meta name="robots" content="noindex, nofollow"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BRUJULAP VAULT</title><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+<link rel="stylesheet" href="app.css"></head><body class="locked"><div id="lock"><form id="lf" class="glass" autocomplete="off"><div style="font-size:2.4rem">🔒</div><h1 class="logo" style="font-size:1.6rem">BRUJULAP <span>VAULT</span></h1>
+<p class="muted">Biblioteca privada. Ingresá la contraseña.</p><input type="password" id="pw" class="field" placeholder="Contraseña" autofocus required>
+<label class="muted small"><input type="checkbox" id="rem"> Recordar en este dispositivo</label><button class="btn primary" id="go">Desbloquear</button><div id="lerr"></div></form></div>
+<style>#lock{position:fixed;inset:0;z-index:999;display:flex;align-items:center;justify-content:center;background:#07080d;padding:20px}#lf{display:flex;flex-direction:column;gap:12px;text-align:center;padding:30px;border-radius:18px;max-width:360px;width:100%}#lerr{color:#ff6b6b;min-height:1.2em}body.locked>header,body.locked>main{display:none}</style>
+<header class="nav glass" id="nav"><a href="#/" class="logo">BRUJULAP <span>VAULT</span></a>
+<nav class="tabs" id="tabs"><a data-p="" href="#/">Inicio</a><a data-p="PS5" href="#/lib/PS5">PS5</a><a data-p="PS4" href="#/lib/PS4">PS4</a><a data-p="Switch 2" href="#/lib/Switch%202">Switch 2</a><a data-p="all" href="#/lib/all">Biblioteca</a></nav>
+<div class="navr"><label class="search glass"><svg viewBox="0 0 24 24"><path d="M10 2a8 8 0 105.3 14l5.4 5.3 1.4-1.4-5.3-5.4A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg><input id="q" placeholder="Buscar juego…" autocomplete="off"></label>
+<button class="btn primary" id="addBtn" style="display:none">＋ <span>Agregar</span></button></div></header>
+<main id="app"></main>
+<dialog id="addDlg" class="glass"><form method="dialog" id="addForm"><h3>Agregar juego</h3>
+<label>Título<input name="title" required placeholder="Ej: Final Fantasy VII Rebirth"></label>
+<label>Plataforma<select name="platform"><option>PS5</option><option>PS4</option><option>Switch 2</option></select></label>
+<label>Edición (opcional)<input name="edition" placeholder="Ej: Deluxe Edition"></label>
+<p class="muted small">Busco carátula, descripción y capturas en Steam y Wikipedia automáticamente.</p>
+<div class="row"><button value="cancel" class="btn ghost" formnovalidate>Cancelar</button><button class="btn primary" id="addGo" value="ok">Agregar</button></div></form></dialog>
+<div id="toast"></div><script src="gate.js"></script><script src="app.js"></script></body></html>
