@@ -80,3 +80,15 @@ dialog h3{margin:0 0 14px}dialog label{display:block;font-size:13px;color:var(--
 @media (max-width:860px){.tabs{display:none}.search input{width:110px}.navr .btn span{display:none}.revwrap{grid-template-columns:1fr}.det{flex-direction:column;align-items:flex-start}.det .poster{width:140px}.hero{min-height:560px}.stat{min-width:calc(50% - 7px);flex:1}.dots{display:none}}
 @media (min-width:1800px){html{font-size:18px}.card{width:220px}.hero p,.det .desc{font-size:19px}}
 .mtabs{display:none}@media (max-width:860px){.mtabs{display:flex;gap:6px;overflow-x:auto;padding:76px 4vw 0;margin-bottom:-60px;position:relative;z-index:6}.mtabs a{padding:7px 14px;border-radius:999px;background:#ffffff14;font-size:13px;font-weight:600;white-space:nowrap}.mtabs a.on{background:#fff;color:#000}.page{padding-top:80px}}
+/* mobile header fix */
+.logo{white-space:nowrap;flex-shrink:0}
+@media (max-width:860px){
+.nav{flex-wrap:wrap;gap:10px 12px;padding:12px 4vw}
+.logo{font-size:clamp(16px,5.2vw,22px);letter-spacing:.06em}
+.navr{margin-left:0;flex:1 1 100%;order:3}
+.navr .search{flex:1;min-width:0}
+.search input{width:100%;min-width:0}
+.mtabs{padding-top:118px}
+}
+.nav.glass:not(.solid){border-color:transparent}
+@media (max-width:860px){.page{padding-top:124px}.det-hero{padding-top:130px}}
